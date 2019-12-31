@@ -58,7 +58,7 @@ export default {
     })
     axios({
         method: 'post',
-        url: '/data.json',
+        url: '/post',
         data: data
     }).then((res)=>{
       console.log(res.data);
@@ -71,6 +71,18 @@ export default {
     axios.post('/post',formData).then(res =>{
         console.log(res.data);
     })
+
+    /**
+        delete 请求
+     */
+     axios.delete('/delete',{
+       params:{
+         id: 12
+       }
+     }).then(res => {
+       console.log(res.data);
+       
+     })
   }
 }
 </script>
