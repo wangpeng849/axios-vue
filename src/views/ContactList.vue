@@ -78,7 +78,6 @@ export default {
             this.list = res.data.data
         }).catch(() => {
             Toast('请求失败，请稍后再试')
-            
         })
       },
       onAdd () {
